@@ -14,13 +14,15 @@ class Person {
 }
 
 class Student extends Person {
+	const person = new Person("John",25);
   study() {
-    console.log(`${this._name} is studying.`);
+    console.log(`${person._name} is studying.`);
   }
 }
 
 class Teacher extends Person {
+	const student = new Student("John",30)
   teach() {
-    console.log(`${this._name} is teaching.`);
+    console.log(`${student._name} is teaching.`);
   }
 }
